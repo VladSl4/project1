@@ -1,0 +1,68 @@
+{% load static %}
+<style type="text/css">
+	.sidebar{
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: fixed;
+        left: 0;
+        top: 0;
+        text-align:left;
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        min-height: 100vh;
+        margin-bottom: 10px;
+        color: white;
+        background-color: black;
+            
+     }
+    .about{
+        margin-top: 100px;
+        font-weight: 400;
+        margin-bottom: 50px;
+        font-size: 30px;
+        margin-left: 30px;
+            
+    }
+    .projects{
+        margin-top: 100px;
+        margin-left: 30px;
+        margin-bottom: 50px;
+        font-size: 30px;
+
+    }
+
+    .contacts{
+        margin-top: 100px;
+        margin-left: 30px;
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+
+    
+    .img1{
+    	margin-top: 30px;
+        margin-left: 60px;
+    }
+
+        
+    a{
+            text-decoration: none;
+            color: white;
+    }
+    
+</style>
+
+</div>
+    <!-- Sidebar -->
+    <aside class="sidebar"> 
+        <div class="about"> <a href="about.html">About Me </a> </div>
+        <div class="projects"> <a href="projects.html">My Projects </a> </div>
+        <div class="contacts"> <a href="contacts.html">Contact Me </a> </div>
+        <div class = 'img1'> <a href='http://127.0.0.1:8000/'> <img src="{% static 'sl.png' %}" width='72' height='72'> </a> </div>
+    </aside>
+   
+
+</div>        
+
+	
+</div>

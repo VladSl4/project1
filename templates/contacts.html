@@ -1,0 +1,112 @@
+{% include 'personal/snippets/body_snippet.html' with value=question %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>slabfolio contacts</title>
+
+    
+
+    <style>
+        html, body {
+            height:100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: white;
+            display: flex;
+            
+        }
+            
+        
+
+        }
+        .Contacts_page{
+            text-align: center;
+            justify-content: center;
+
+        }
+
+
+        .Contacts_content{
+            display: flex;
+            color: black;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-left: 600px;
+            margin-top: auto;
+            font-size: 40px;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        .img2{
+        	margin-top: 30px;
+        	margin-bottom: 10px;
+
+        }
+
+        .img3{
+        	margin-top: 10px;
+        	margin-bottom: 10px;
+
+        }
+
+        .img4{
+        	margin-top: 10px;
+        	margin-bottom: 10px;
+
+        }
+
+        
+        
+        
+    </style>
+</head>
+<body>
+
+
+
+<div class="Contacts_page">
+    <!-- Main info -->
+    <div class="Contacts_content">
+       
+         Here`s how you can text me: 
+         <div class = 'img2'> <a href='https://www.instagram.com/slabidker/'> <img src="{% static 'instagram_logo.png' %}" width='72' height='72'> </a> </div>
+         <div class = 'img3'> <a href='https://t.me/slabidker'> <img src="{% static 'telegram_logo1.jpg' %}" width='72' height='72'> </a> </div>
+         <div class = 'img4'> <a href='mailto:vslabidker@gmail.com'> <img src="{% static 'email_logo1.jpg' %}" width='72' height='72'> </a> </div>
+          
+    </div>
+    <!-- Contact Form -->
+    <!-- <div class="col-12 col-md-8"> -->
+        <!-- <div class="contact-form"> -->
+            <!-- Section Heading -->
+            <!-- <div>
+                <h2> Get in touch - {{message_name}} </h2>
+                <div class="line"></div>
+            </div>
+            <form action="{url 'contacts'}" method="post">
+                {% csrf_token %}
+                <div class="col-lg-6">
+                    <input type="text" name="message-name" class="form-control mb-30" placeholder="Your Name">
+                </div>  
+                
+                <div class="col-lg-6">
+                    <input type="email" name="message-email" class="form-control mb-30" placeholder="Your Email">
+                 </div>   
+                
+                <div class="col-12">
+                    <textarea name="message" class="ofrm-control mb-30" placeholder="Your Message" > </textarea>
+                 </div>
+
+                 <div class="col-12">
+                    <button type="submit" class="btn dento-btn"> Send Message   </button>
+                 </div>       
+            </form>               
+                    
+        </div> -->      
+     <!-- </div>    -->
+    
+</div>
+
+</body>
+</html>
